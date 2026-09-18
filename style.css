@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto: #111111;
+    --branco: #ffffff;
+    --bege: #eee9df;
+    --verde: #344532;
+    --cinza: #777777;
+    --linha: #d7d4cd;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--branco);
+    color: var(--preto);
+    font-family: "DM Sans", Arial, sans-serif;
+}
+
+header {
+    border-bottom: 2px solid var(--preto);
+}
+
+.barra-superior {
+    background: var(--preto);
+    color: var(--branco);
+    padding: 9px 6%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.cabecalho {
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 6% 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 52px;
+    line-height: 1;
+}
+
+.cabecalho p {
+    color: var(--cinza);
+    margin-top: 10px;
+}
+
+.sigla {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 38px;
+    font-weight: 800;
+    border: 3px solid var(--preto);
+    padding: 8px 13px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 6%;
+    display: flex;
+    gap: 30px;
+    border-top: 1px solid var(--linha);
+}
+
+nav a {
+    color: var(--preto);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--verde);
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 6%;
+}
+
+section {
+    padding: 55px 0;
+}
+
+.manchete {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 0;
+    border-bottom: 1px solid var(--preto);
+}
+
+.imagem-principal {
+    height: 430px;
+    overflow: hidden;
+}
+
+.imagem-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-manchete {
+    background: var(--bege);
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.etiqueta {
+    color: var(--verde);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.texto-manchete h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 42px;
+    line-height: 1.08;
+    margin: 18px 0;
+}
+
+.texto-manchete p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.texto-manchete a {
+    margin-top: 25px;
+    color: var(--preto);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-bottom: 2px solid var(--preto);
+    padding-bottom: 13px;
+    margin-bottom: 28px;
+}
+
+.titulo span {
+    background: var(--verde);
+    color: white;
+    padding: 5px 8px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.titulo h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 32px;
+}
+
+.noticias-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+}
+
+.noticia-grande img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.noticia-grande span,
+.lista-noticias span {
+    display: block;
+    margin-top: 15px;
+    color: var(--verde);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.noticia-grande h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.noticia-grande p,
+.lista-noticias p {
+    color: var(--cinza);
+    line-height: 1.5;
+}
+
+.lista-noticias article {
+    padding: 0 0 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid var(--linha);
+}
+
+.lista-noticias h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 22px;
+    margin: 7px 0;
+}
+
+.frase {
+    background: var(--verde);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.frase p {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.frase span {
+    display: block;
+    margin-top: 12px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.competicoes-lista {
+    border-top: 1px solid var(--preto);
+}
+
+.competicao {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 23px 5px;
+    border-bottom: 1px solid var(--linha);
+}
+
+.competicao strong {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 23px;
+}
+
+.competicao p {
+    color: var(--cinza);
+}
+
+.competicao span {
+    text-align: right;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--verde);
+}
+
+.times-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--preto);
+}
+
+.times-lista div {
+    padding: 18px 5px;
+    border-bottom: 1px solid var(--linha);
+    font-weight: 700;
+}
+
+.times-lista div::before {
+    content: "•";
+    color: var(--verde);
+    margin-right: 8px;
+}
+
+.jogos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.jogo {
+    background: var(--bege);
+    padding: 28px;
+}
+
+.jogo-topo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--verde);
+}
+
+.confronto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 18px;
+}
+
+.confronto strong {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 22px;
+}
+
+.confronto b {
+    font-size: 25px;
+}
+
+.jogo p {
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+.tabela-cabecalho,
+.linha-tabela {
+    display: grid;
+    grid-template-columns: 80px 1fr 100px 80px 80px;
+    align-items: center;
+}
+
+.tabela-cabecalho {
+    background: var(--preto);
+    color: white;
+    padding: 13px 15px;
+    font-size: 11px;
+}
+
+.linha-tabela {
+    padding: 18px 15px;
+    border-bottom: 1px solid var(--linha);
+}
+
+footer {
+    background: var(--preto);
+    color: white;
+    padding: 40px 6%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+footer h2 {
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+footer p {
+    color: #aaa;
+    margin-top: 8px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    .barra-superior {
+        display: none;
+    }
+
+    .cabecalho h1 {
+        font-size: 36px;
+    }
+
+    .sigla {
+        font-size: 25px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .manchete,
+    .noticias-grid,
+    .jogos {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-principal {
+        height: 280px;
+    }
+
+    .texto-manchete h2 {
+        font-size: 32px;
+    }
+
+    .competicao {
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+
+    .competicao span {
+        text-align: left;
+    }
+
+    .times-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tabela-cabecalho,
+    .linha-tabela {
+        grid-template-columns: 45px 1fr 55px 45px 45px;
+    }
+
+    footer {
+        display: block;
+    }
+}
